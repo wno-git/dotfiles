@@ -7,13 +7,14 @@ set expandtab
 set number
 set scrolloff=20
 set cursorline
+set fillchars=vert:\ 
 
 " syntax
 syntax enable
 autocmd BufNewFile,BufRead SCons* set filetype=scons
 let c_space_errors = 1
 
-" colors
+" look
 set t_Co=256
 colorscheme molokai
 set background=light
@@ -28,4 +29,4 @@ let mapleader = ","
 map <C-j> }
 map <C-k> {
 map <Leader>w :write<CR>
-
+imap § <Esc>
