@@ -7,6 +7,7 @@ set expandtab
 set number
 set scrolloff=20
 set cursorline
+set ignorecase
 set fillchars=vert:\ 
 
 " syntax
