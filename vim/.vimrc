@@ -35,3 +35,4 @@ map <C-j> }
 map <C-k> {
 map <Leader>w :write<CR>
 imap § <Esc>
+vmap § <Esc>
