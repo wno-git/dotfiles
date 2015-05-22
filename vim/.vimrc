@@ -1,6 +1,5 @@
 " config
 set textwidth=80
-set colorcolumn=80
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -22,8 +21,11 @@ set cinkeys-=0# " indent preprocessor directives
 " look
 set t_Co=256
 colorscheme molokai
-set background=light
-highlight ColorColumn ctermbg=darkgrey
+highlight ColorColumn ctermbg=234
+
+" https://stackoverflow.com/questions/235439
+highlight OverLength ctermbg=250 ctermfg=234
+match OverLength /\%81v.\+/
 
 " status
 set laststatus=2
