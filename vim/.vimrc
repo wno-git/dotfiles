@@ -24,8 +24,11 @@ colorscheme molokai
 highlight ColorColumn ctermbg=234
 
 " https://stackoverflow.com/questions/235439
-highlight OverLength ctermbg=250 ctermfg=234
-match OverLength /\%81v.\+/
+augroup vimrc_autocmds
+    autocmd BufEnter * highlight OverLength ctermbg=250 ctermfg=234
+    autocmd BufEnter * match OverLength /\%81v.\+/
+augroup END
+" end stackoverflow
 
 " status
 set laststatus=2
