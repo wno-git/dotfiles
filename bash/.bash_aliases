@@ -9,6 +9,9 @@ alias rm='rm --one-file-system -I'
 alias gis='git status'
 alias gia='git add'
 
+alias pd='pushd'
+alias n='ninja'
+
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
