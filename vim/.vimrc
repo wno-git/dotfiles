@@ -23,7 +23,7 @@ highlight ColorColumn ctermbg=234
 
 " gui
 set guioptions=
-set guifont="Bitstream Vera Sans Mono 16"
+set guifont=Bitstream\ Vera\ Sans\ Mono\ 16
 
 " https://stackoverflow.com/questions/235439
 augroup vimrc_autocmds
