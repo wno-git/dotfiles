@@ -23,6 +23,10 @@ set t_Co=256
 colorscheme molokai
 highlight ColorColumn ctermbg=234
 
+" gui
+set guioptions=
+set guifont=Bitstream Vera Sans Mono 16
+
 " https://stackoverflow.com/questions/235439
 augroup vimrc_autocmds
     autocmd BufEnter * highlight OverLength ctermbg=250 ctermfg=234
