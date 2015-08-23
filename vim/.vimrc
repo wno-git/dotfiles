@@ -15,8 +15,6 @@ set fillchars=vert:\
 syntax enable
 autocmd BufNewFile,BufRead SCons* set filetype=scons
 let c_space_errors = 1 " whitespace warnings
-set cindent
-set cinkeys-=0# " indent preprocessor directives
 
 " look
 set t_Co=256
