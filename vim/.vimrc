@@ -6,13 +6,15 @@ set expandtab
 set number
 set scrolloff=20
 set cursorline
-set ignorecase
-set incsearch
 set autoindent
 set smartindent
 set fillchars=vert:\ 
 set wildmenu
 set wildmode=list:full
+
+" search
+set ignorecase
+set incsearch
 
 " syntax
 syntax enable
