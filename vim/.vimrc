@@ -15,6 +15,7 @@ set wildmode=list:full
 " search
 set ignorecase
 set incsearch
+set hlsearch
 
 " syntax
 syntax enable
@@ -46,5 +47,6 @@ let mapleader = ","
 map <C-j> }
 map <C-k> {
 map <Leader>w :write<CR>
+map <Leader>h :nohlsearch<CR>
 imap § <Esc>
 vmap § <Esc>
