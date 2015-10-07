@@ -10,6 +10,8 @@ set ignorecase
 set autoindent
 set smartindent
 set fillchars=vert:\ 
+set wildmenu
+set wildmode=list:full
 
 " syntax
 syntax enable
