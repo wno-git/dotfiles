@@ -1,0 +1,17 @@
+@-moz-document domain(youtube.com) {
+    .video-annotations, .alerts-wrapper, .yt-alert-info, .ytp-player-content {
+        display: none !important;
+    }
+    .ytp-cards-teaser, .ytp-cards-button {
+        display: none !important;
+    }
+    #yt-comments-sb-container, #yt-masthead-signin {
+        display: none !important;
+    }
+}
+
+@-moz-document domain(reddit.com) {
+    .read-next-container {
+        display: none !important;
+    }
+}
