@@ -1,0 +1,11 @@
+/* reduce bookmark bar height */
+#PersonalToolbar {
+    max-height: 30px;
+    font-size: 90%;
+}
+
+/* desaturate bookmark bar favicons */
+.bookmark-item > .toolbarbutton-icon {
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='desaturate'><feColorMatrix%20type='saturate'%20values='0.0'/></filter></svg>#desaturate");
+    filter: desaturate(100%);
+}
