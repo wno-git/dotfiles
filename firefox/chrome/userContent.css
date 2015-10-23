@@ -14,4 +14,7 @@
     .read-next-container {
         display: none !important;
     }
+    .newsletterbar {
+        display: none !important;
+    }
 }
