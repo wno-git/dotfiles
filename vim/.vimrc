@@ -20,6 +20,7 @@ set hlsearch
 " syntax
 syntax enable
 autocmd BufNewFile,BufRead SCons* set filetype=scons
+autocmd BufNewFile,BufRead *.frag,*.vert set filetype=glsl
 let c_space_errors = 1 " whitespace warnings
 
 " look
