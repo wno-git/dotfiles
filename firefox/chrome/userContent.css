@@ -8,6 +8,9 @@
     #yt-comments-sb-container, #yt-masthead-signin {
         display: none !important;
     }
+    #watch-discussion {
+        display: none !important;
+    }
 }
 
 @-moz-document domain(reddit.com) {
