@@ -21,3 +21,62 @@
         display: none !important;
     }
 }
+
+@-moz-document domain(lwn.net) {
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+    #menu, .topnav-container {
+        background-color: #fc9 !important;
+    }
+
+    .Headline, .topnav-container {
+        border-radius: 0 !important;
+    }
+
+    .navmenu ul {
+        background: unset !important;
+    }
+
+    .navmenu hr {
+        display: none !important;
+    }
+
+    body {
+        background-color: #faf7f5 !important;;
+        color: #151515 !important;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .PageHeadline > h1 {
+        font-weight: 300 !important;
+    }
+
+    b {
+        font-weight: 400 !important;
+        font-size: unset !important;
+    }
+
+    .fp-feature > font {
+        font-size: unset !important;
+        display: block !important;
+        margin-top: 0.33em !important;
+    }
+
+    .BlurbListing > font {
+        font-size: unset !important;
+        display: block !important;
+        margin-top: 0.33em !important;
+    }
+
+    .CommentTitle {
+        font-weight: 400 !important;
+        border-radius: unset !important;
+        font-size: unset !important;
+    }
+
+    .pure-u-1 {
+        font-size: 93% !important;
+        font-family: "Droid Serif", serif;
+    }
+
+}
