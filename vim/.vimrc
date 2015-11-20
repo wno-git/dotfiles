@@ -46,6 +46,7 @@ set laststatus=2
 set statusline=%m\ %t%=%9.(%=%l,%c%)\ %P\ %y
 
 " keybinds
+set backspace=2 " enable erasing with backspace in cygwin
 let mapleader = ","
 map <C-j> }
 map <C-k> {
