@@ -22,6 +22,24 @@
     }
 }
 
+@-moz-document domain(hs.fi) {
+    #article-text {
+        display: block !important;
+    }
+
+    .article-text-content {
+        display: block !important;
+    }
+
+    #javascript-disabled-error {
+        display: none !important;
+    }
+
+    html {
+        overflow: visible !important;
+    }
+}
+
 @-moz-document domain(lwn.net) {
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
