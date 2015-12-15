@@ -20,6 +20,9 @@
     .newsletterbar {
         display: none !important;
     }
+    .cookie-infobar {
+        display: none !important;
+    }
 }
 
 @-moz-document domain(hs.fi) {
