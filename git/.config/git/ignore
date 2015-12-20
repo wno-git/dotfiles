@@ -3,4 +3,4 @@
 *.swo
 
 # python bytecode
-*/__pycache__/*
+**/__pycache__
