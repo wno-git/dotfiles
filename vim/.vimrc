@@ -25,6 +25,9 @@ autocmd BufNewFile,BufRead *.html,*.htm,*.xml,*.xhtml
     \ setlocal shiftwidth=2 tabstop=2
 let c_space_errors = 1 " whitespace warnings
 
+" workaround for old versions of vim
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+
 " look
 set t_Co=256
 colorscheme molokai
