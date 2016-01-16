@@ -21,7 +21,7 @@ set hlsearch
 syntax enable
 autocmd BufNewFile,BufRead SCons* set filetype=scons
 autocmd BufNewFile,BufRead *.frag,*.vert set filetype=glsl
-autocmd BufNewFile,BufRead *.html,*.htm,*.xml,*.xhtml
+autocmd FileType html,htmldjango
     \ setlocal shiftwidth=2 tabstop=2
 let c_space_errors = 1 " whitespace warnings
 
