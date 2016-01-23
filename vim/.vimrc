@@ -26,7 +26,7 @@ autocmd FileType html,htmldjango
 let c_space_errors = 1 " whitespace warnings
 
 " workaround for old versions of vim
-autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd BufNewFile,BufWritePost,BufRead *.md set filetype=markdown
 
 " look
 set t_Co=256
