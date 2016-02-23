@@ -30,7 +30,8 @@ autocmd BufNewFile,BufWritePost,BufRead *.md set filetype=markdown
 
 " look
 set t_Co=256
-colorscheme molokai
+set background=dark
+colorscheme hybrid
 highlight ColorColumn ctermbg=234
 
 " gui
