@@ -101,3 +101,26 @@
     }
 
 }
+
+@-moz-document domain(mycourses.aalto.fi) {
+    body, .brand, .navbar-inner {
+        background: none !important;
+    }
+
+    #page-footer {
+        display: none !important;
+    }
+
+    .navbar, .nav > li > a, .usermenu {
+        color: inherit !important;
+    }
+
+    .block_calendar_upcoming .event {
+        display: none !important;
+    }
+
+    .block_calendar_upcoming .event:nth-child(-n+5) {
+        display: block !important;
+    }
+
+}
