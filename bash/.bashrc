@@ -26,7 +26,7 @@ HISTFILESIZE=2000
 ### Prompt
 
 case "$TERM" in
-    xterm|xterm-color|screen-256color) color_prompt=yes;;
+    xterm|xterm-color|screen*) color_prompt=yes;;
 esac
 
 if [ "$color_prompt" = yes ]; then
