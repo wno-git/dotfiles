@@ -31,6 +31,10 @@ let c_space_errors = 1 " whitespace warnings
 " workaround for old versions of vim
 autocmd BufNewFile,BufWritePost,BufRead *.md set filetype=markdown
 
+" workaround: don't load logipat plugin
+" https://stackoverflow.com/questions/31695455
+let g:loaded_logipat = 1
+
 " highlight trailing whitespace
 " http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red
