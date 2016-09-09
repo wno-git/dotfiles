@@ -9,6 +9,8 @@ set cursorline
 set autoindent
 set smartindent
 set fillchars=vert:\ 
+set list
+set listchars=tab:\|\
 set wildmenu
 set wildmode=list:full
 
