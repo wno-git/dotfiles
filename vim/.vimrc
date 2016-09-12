@@ -21,6 +21,7 @@ set hlsearch
 
 " syntax
 syntax enable
+autocmd BufNewFile,BufRead *.scala set filetype=scala
 autocmd BufNewFile,BufRead SCons* set filetype=scons
 autocmd BufNewFile,BufRead *.frag,*.vert set filetype=glsl
 autocmd FileType html,htmldjango
