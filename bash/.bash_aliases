@@ -10,7 +10,10 @@ alias gis='git status'
 alias gia='git add'
 
 alias pd='pushd'
+
 alias n='ninja'
+alias nn='nice -n 19 ninja'
+alias nq='ninja -t query'
 
 alias ll='ls -alF'
 alias la='ls -A'
