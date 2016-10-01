@@ -79,7 +79,6 @@ esac
 
 set_ps "$prompt_256color"
 
-
 ### Other colors
 
 if [ -x /usr/bin/dircolors ]; then
