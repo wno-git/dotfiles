@@ -28,11 +28,17 @@ function set_ps {
     local color_purple
     local color_orange
     local color_reset
-    color_white_lo=$(tput setaf 7)
-    color_white_hi=$(tput setaf 15)
-    color_purple=$(tput setaf 92)
-    color_orange=$(tput setaf 208)
-    color_reset=$(tput sgr0)
+
+    # Don't run tput unless color prompt is requested. TERM variable is
+    # assumed to be set if color prompt is requested. tput will not work without
+    # it.
+    if [ "$color_prompt" = true ]; then
+        color_white_lo=$(tput setaf 7)
+        color_white_hi=$(tput setaf 15)
+        color_purple=$(tput setaf 92)
+        color_orange=$(tput setaf 208)
+        color_reset=$(tput sgr0)
+    fi
 
     local ps_time
     local ps_jobs
