@@ -44,14 +44,19 @@ function set_ps {
     local ps_jobs
     local ps_user_host
     local ps_dir
-    local ps_git
     local ps_uid
     ps_time="\D{%H:%M}"
     ps_jobs="\j"
     ps_user_host="\u@\h"
     ps_dir="\W"
-    ps_git="\$(__git_ps1 \"%s \")"
     ps_uid="\$"
+
+    local ps_git
+    if [ "$(type -t __git_ps1)" = function ]; then
+        ps_git="\$(__git_ps1 \"%s \")"
+    else
+        ps_git=""
+    fi
 
     local ps_color
     ps_color="${color_white_lo}${ps_time} ${ps_jobs} "\
