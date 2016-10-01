@@ -25,21 +25,61 @@ HISTFILESIZE=2000
 
 ### Prompt
 
+function set_ps {
+    local color_prompt
+    color_prompt=$1
+
+    local color_white_lo
+    local color_white_hi
+    local color_purple
+    local color_orange
+    local color_reset
+    color_white_lo=$(tput setaf 7)
+    color_white_hi=$(tput setaf 15)
+    color_purple=$(tput setaf 92)
+    color_orange=$(tput setaf 208)
+    color_reset=$(tput sgr0)
+
+    local ps_time
+    local ps_jobs
+    local ps_user_host
+    local ps_dir
+    local ps_git
+    local ps_uid
+    ps_time="\D{%H:%M}"
+    ps_jobs="\j"
+    ps_user_host="\u@\h"
+    ps_dir="\W"
+    ps_git="\$(__git_ps1 \"%s \")"
+    ps_uid="\$"
+
+    local ps_color
+    ps_color="${color_white_lo}${ps_time} ${ps_jobs} "\
+"${color_white_hi}${ps_user_host} "\
+"${color_purple}${ps_dir} "\
+"${color_orange}${ps_git}"\
+"${color_white_lo}${ps_uid}${color_reset} "
+
+    local ps_no_color
+    ps_no_color="$ps_time $ps_jobs $ps_user_host $ps_dir $ps_git $ps_uid "
+
+    if [ "$color_prompt" = true ]; then
+        PS1=$ps_color
+    else
+        PS1=$ps_no_color
+    fi
+}
+
+prompt_256color=false
 case "$TERM" in
-    xterm|xterm-color|screen*) color_prompt=yes;;
+    xterm-256color)
+        prompt_256color=true ;;
+    screen-256color)
+        prompt_256color=true ;;
 esac
 
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}'\
-'\[\e[38;5;7m\]\D{%H:%M} \j\[\e[00m\] '\
-'\[\e[1;77m\]\u@\h\[\e[00m\] '\
-'\[\e[38;5;92m\]\W\[\e[00m\]'\
-'$(__git_ps1 " \[\e[38;5;208m\]%s\[\e[00m\]")'\
-' \$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\A \u@\h \W\$ '
-fi
-unset color_prompt force_color_prompt
+set_ps "$prompt_256color"
+
 
 ### Other colors
 
