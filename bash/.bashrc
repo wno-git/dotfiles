@@ -1,9 +1,3 @@
-### Defaults
-
-if [ -f /etc/bash.bashrc ]; then
-    . /etc/bash.bashrc
-fi
-
 ### Git
 
 if [ -f /usr/lib/git-core/git-sh-prompt ]; then
