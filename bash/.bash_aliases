@@ -15,6 +15,6 @@ alias n='ninja'
 alias nn='nice -n 19 ninja'
 alias nq='ninja -t query'
 
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll="ls --all --classify --format=long"
+alias la="ls --almost-all"
+alias l="ls --classify --format=across"
