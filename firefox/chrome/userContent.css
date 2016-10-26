@@ -43,6 +43,21 @@
     }
 }
 
+@-moz-document domain(nyt.fi) {
+    #javascript-disabled-error {
+        display: none !important;
+    }
+
+    .no-js {
+        overflow: unset !important;
+    }
+
+    .hidden {
+        display: unset !important;
+        visibility: unset !important;
+    }
+}
+
 @-moz-document domain(lwn.net) {
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
