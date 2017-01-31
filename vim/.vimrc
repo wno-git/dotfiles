@@ -69,5 +69,8 @@ map <C-j> }
 map <C-k> {
 map <Leader>w :write<CR>
 map <Leader>h :nohlsearch<CR>
+map <Leader>e :Explore<CR>
+map <Leader>t :Texplore<CR>
+map <Leader>q :q<CR>
 imap § <Esc>
 vmap § <Esc>
