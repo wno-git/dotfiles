@@ -1,0 +1,14 @@
+/*
+   Adjust header bar height
+   Source: https://unix.stackexchange.com/questions/276951
+*/
+
+.default-decoration {
+    min-height: 0;
+    padding: 2px;
+}
+
+.default-decoration .titlebutton {
+    min-height: 20px;
+    min-width: 20px;
+}
