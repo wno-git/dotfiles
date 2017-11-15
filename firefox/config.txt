@@ -1,0 +1,4 @@
+network.IDN_show_punycode true
+security.OCSP.require true
+browser.urlbar.oneOffSearches false
+layers.acceleration.force-enabled true
