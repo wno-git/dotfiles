@@ -112,3 +112,11 @@ if ! shopt -oq posix; then
 fi
 
 source "$HOME/.bazel/bin/bazel-complete.bash" || true
+
+### Environment
+
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+export ANSIBLE_NOCOWS=1
