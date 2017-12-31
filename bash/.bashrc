@@ -110,3 +110,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+source "$HOME/.bazel/bin/bazel-complete.bash" || true

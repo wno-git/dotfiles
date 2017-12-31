@@ -6,3 +6,5 @@ case "$-" in
         fi
         ;;
 esac
+
+PATH="$HOME/bin:$PATH"
