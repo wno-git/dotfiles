@@ -52,3 +52,8 @@ map <Leader>t :Texplore<CR>
 map <Leader>q :q<CR>
 imap § <Esc>
 vmap § <Esc>
+
+" workarounds
+
+" Disable changing cursor. It makes old terminals print garbage.
+set guicursor=
