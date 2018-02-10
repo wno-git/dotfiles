@@ -111,7 +111,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-source "$HOME/.bazel/bin/bazel-complete.bash" || true
+if [ -f "$HOME/.bazel/bin/bazel-complete.bash" ]; then
+    . "$HOME/.bazel/bin/bazel-complete.bash"
+fi
 
 ### Environment
 
