@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ### Git
 
 if [ -f /usr/lib/git-core/git-sh-prompt ]; then
