@@ -124,3 +124,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export ANSIBLE_NOCOWS=1
+export LIBVIRT_DEFAULT_URI="qemu:///system"
