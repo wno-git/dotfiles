@@ -3,6 +3,7 @@
 set cursorline
 set expandtab
 set list
+set nomodeline
 set number
 set scrolloff=20
 set shiftwidth=4

@@ -3,6 +3,7 @@ set textwidth=80
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set nomodeline
 set number
 set scrolloff=20
 set cursorline
