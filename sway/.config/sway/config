@@ -219,4 +219,7 @@ bar {
     }
 }
 
+for_window [class=".*"] border none
+gaps inner 4
+
 include /etc/sway/config.d/*
