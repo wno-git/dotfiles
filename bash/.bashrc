@@ -103,6 +103,12 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+### Functions
+
+function url2qr {
+    echo "${1}" | qrencode -s 32 -o - | display
+}
+
 ### bash-completion
 
 if ! shopt -oq posix; then
