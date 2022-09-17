@@ -131,3 +131,4 @@ fi
 
 export ANSIBLE_NOCOWS=1
 export LIBVIRT_DEFAULT_URI="qemu:///system"
+export MOZ_USE_XINPUT2=1
