@@ -18,7 +18,7 @@ set $term x-terminal-emulator
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu dmenu_path | dmenu -fn "Lato Regular 8" -nb "#000000" -nf "#ffffff" -sb "#ffffff" -sf "#000000" | xargs swaymsg exec --
 
 input * xkb_layout fi
 input type:touchpad tap enabled
