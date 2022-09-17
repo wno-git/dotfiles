@@ -26,8 +26,7 @@ let c_space_errors = 1 " whitespace warnings
 " look
 
 set termguicolors
-set background=dark
-colorscheme gruvbox
+colorscheme elflord
 
 " https://stackoverflow.com/questions/235439
 augroup vimrc_autocmds
